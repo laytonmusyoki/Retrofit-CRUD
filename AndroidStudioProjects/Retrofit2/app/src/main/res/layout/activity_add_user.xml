@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New User"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/input_bg"
+            android:hint="Enter username"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:background="@drawable/input_bg"
+            android:layout_height="45dp"
+            android:hint="Enter email"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_bg"
+            android:textColorHint="@color/black"
+            android:hint="Enter password"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add User"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
